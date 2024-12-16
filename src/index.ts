@@ -1,6 +1,6 @@
 import express from 'express'
 import { conectarDB } from './db/conectarDb'
-// import conductorRoutes from './routes/conductorRoutes';
+import conductorRoutes from './routes/conductorRoutes';
 // import pasajeroRoutes from './routes/pasajeroRoutes';
 import dotenv from 'dotenv'
 
@@ -16,7 +16,7 @@ app.use(express.json())
 
 const raiz = process.env.ROOT_PATH || '/'
 // Configurar las rutas
-// app.use(`${raiz}/conductores`, conductorRoutes);
+app.use(`${raiz}/conductores`, conductorRoutes);
 // app.use(`${raiz}/pasajeros`, pasajeroRoutes);
 
 const port = process.env.PUERTO || 5000
