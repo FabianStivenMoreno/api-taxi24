@@ -1,0 +1,880 @@
+{
+	"info": {
+		"_postman_id": "81365be0-0a1e-4d6e-b274-3957eec1bd9d",
+		"name": "api-taxi24",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17088869"
+	},
+	"item": [
+		{
+			"name": "conductores",
+			"item": [
+				{
+					"name": "obtenerTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/conductores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"conductores"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "obtenerTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/conductores",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"conductores"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1827"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"723-3H/xf2YZdLv9g57l6VgmDsMqMbY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:53:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"ubicacion\": {\n            \"lat\": 4.60971,\n            \"lng\": -74.08175\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f62\",\n        \"nombre\": \"Conductor A\",\n        \"estado\": \"ocupado\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.688Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.688Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 4.61,\n            \"lng\": -74.1\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f63\",\n        \"nombre\": \"Conductor B\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 4.615,\n            \"lng\": -74.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f64\",\n        \"nombre\": \"Conductor C\",\n        \"estado\": \"ocupado\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 4.615,\n            \"lng\": -74.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f65\",\n        \"nombre\": \"Conductor D\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 8.615,\n            \"lng\": -59.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f66\",\n        \"nombre\": \"Conductor E\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 3.61003,\n            \"lng\": -54.50021\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f67\",\n        \"nombre\": \"Conductor F\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 7.65001,\n            \"lng\": -44.09001\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f68\",\n        \"nombre\": \"Conductor G\",\n        \"estado\": \"ocupado\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 5.615,\n            \"lng\": -37.06002\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f69\",\n        \"nombre\": \"Conductor H\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 11.615,\n            \"lng\": -52.15006\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f6a\",\n        \"nombre\": \"Conductor I\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "obtenerCercanos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/conductores/cercanos?lat=4.6150001&lng=-74.09001&rad=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"conductores",
+								"cercanos"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "4.6150001"
+								},
+								{
+									"key": "lng",
+									"value": "-74.09001"
+								},
+								{
+									"key": "rad",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "obtenerCercanos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/conductores/cercanos?lat=4.6150001&lng=-74.09001&rad=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"conductores",
+										"cercanos"
+									],
+									"query": [
+										{
+											"key": "lat",
+											"value": "4.6150001"
+										},
+										{
+											"key": "lng",
+											"value": "-74.09001"
+										},
+										{
+											"key": "rad",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "399"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"18f-ObYoRCGKxAz3AA79lrbeihWHQCo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:53:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"ubicacion\": {\n            \"lat\": 4.61,\n            \"lng\": -74.1\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f63\",\n        \"nombre\": \"Conductor B\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 4.615,\n            \"lng\": -74.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f65\",\n        \"nombre\": \"Conductor D\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "obtenerDisponibles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/conductores/disponibles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"conductores",
+								"disponibles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "obtenerDisponibles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/conductores/disponibles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"conductores",
+										"disponibles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1211"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4bb-PR+PQes9sPUPpRuPRX6EUMJ+VHc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:53:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"ubicacion\": {\n            \"lat\": 4.61,\n            \"lng\": -74.1\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f63\",\n        \"nombre\": \"Conductor B\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 4.615,\n            \"lng\": -74.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f65\",\n        \"nombre\": \"Conductor D\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 8.615,\n            \"lng\": -59.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f66\",\n        \"nombre\": \"Conductor E\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 3.61003,\n            \"lng\": -54.50021\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f67\",\n        \"nombre\": \"Conductor F\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 5.615,\n            \"lng\": -37.06002\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f69\",\n        \"nombre\": \"Conductor H\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 11.615,\n            \"lng\": -52.15006\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f6a\",\n        \"nombre\": \"Conductor I\",\n        \"estado\": \"libre\",\n        \"__v\": 0,\n        \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n        \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "obtenerConductorById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/conductores/676200b8fd04e1d8ae067f63",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"conductores",
+								"676200b8fd04e1d8ae067f63"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "obtenerConductorById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/conductores/676200b8fd04e1d8ae067f63",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"conductores",
+										"676200b8fd04e1d8ae067f63"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "197"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c5-hWhTCn08uEsfLpBILpCN/Ft8X+o\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:54:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ubicacion\": {\n        \"lat\": 4.61,\n        \"lng\": -74.1\n    },\n    \"_id\": \"676200b8fd04e1d8ae067f63\",\n    \"nombre\": \"Conductor B\",\n    \"estado\": \"libre\",\n    \"__v\": 0,\n    \"createdAt\": \"2024-12-17T22:52:40.689Z\",\n    \"updatedAt\": \"2024-12-17T22:52:40.689Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pasajeros",
+			"item": [
+				{
+					"name": "obtenerTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/pasajeros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"pasajeros"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "obtenerTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/pasajeros",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"pasajeros"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1255"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4e7-y/bDW9wVO6mjSvhSkhq/fEYV7NM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:54:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"ubicacion\": {\n            \"lat\": 3.60971,\n            \"lng\": -65.08175\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f6d\",\n        \"nombre\": \"Pasajero A\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 3.71,\n            \"lng\": -58.1\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f6e\",\n        \"nombre\": \"Pasajero B\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 5.415,\n            \"lng\": -75.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f6f\",\n        \"nombre\": \"Pasajero C\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 3.445,\n            \"lng\": -86.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f70\",\n        \"nombre\": \"Pasajero D\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 8.615,\n            \"lng\": -59.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f71\",\n        \"nombre\": \"Pasajero E\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 4.70978,\n            \"lng\": -45.08175\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f72\",\n        \"nombre\": \"Pasajero F\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 6.71001,\n            \"lng\": -76.10002\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f73\",\n        \"nombre\": \"Pasajero G\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 6.41501,\n            \"lng\": -66.09\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f74\",\n        \"nombre\": \"Pasajero H\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 3.333,\n            \"lng\": -33.01\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f75\",\n        \"nombre\": \"Pasajero I\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    },\n    {\n        \"ubicacion\": {\n            \"lat\": 6.66,\n            \"lng\": -66.69\n        },\n        \"_id\": \"676200b8fd04e1d8ae067f76\",\n        \"nombre\": \"Pasajero J\",\n        \"estado\": \"buscando\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "obtenerPasajeroById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/pasajeros/6761d0e7155da05507bf4fa5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"pasajeros",
+								"6761d0e7155da05507bf4fa5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "obtenerPasajeroById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/pasajeros/676200b8fd04e1d8ae067f71",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"pasajeros",
+										"676200b8fd04e1d8ae067f71"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "123"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7b-I009KGfVYDpLPOqfQT8y8bcWpaU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:55:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ubicacion\": {\n        \"lat\": 8.615,\n        \"lng\": -59.09\n    },\n    \"_id\": \"676200b8fd04e1d8ae067f71\",\n    \"nombre\": \"Pasajero E\",\n    \"estado\": \"buscando\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "obtenerConductoresCercanos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/pasajeros/676200b8fd04e1d8ae067f71/cercanos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"pasajeros",
+								"676200b8fd04e1d8ae067f71",
+								"cercanos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "obtenerConductoresCercanos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/pasajeros/676200b8fd04e1d8ae067f71/cercanos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"pasajeros",
+										"676200b8fd04e1d8ae067f71",
+										"cercanos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "445"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1bd-dMPRCVzZr4Whovm4WLWPKyQMazU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:55:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Conductores más cercanos encontrados.\",\n    \"pasajeroEstado\": \"buscando\",\n    \"conductores\": [\n        {\n            \"id\": \"676200b8fd04e1d8ae067f66\",\n            \"nombre\": \"Conductor E\",\n            \"ubicacion\": {\n                \"lat\": 8.615,\n                \"lng\": -59.09\n            },\n            \"distancia\": 0\n        },\n        {\n            \"id\": \"676200b8fd04e1d8ae067f67\",\n            \"nombre\": \"Conductor F\",\n            \"ubicacion\": {\n                \"lat\": 3.61003,\n                \"lng\": -54.50021\n            },\n            \"distancia\": 753882\n        },\n        {\n            \"id\": \"676200b8fd04e1d8ae067f6a\",\n            \"nombre\": \"Conductor I\",\n            \"ubicacion\": {\n                \"lat\": 11.615,\n                \"lng\": -52.15006\n            },\n            \"distancia\": 830534\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "viajes",
+			"item": [
+				{
+					"name": "completarViaje",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/viajes/676201ce157ee198a4db771d/completar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"viajes",
+								"676201ce157ee198a4db771d",
+								"completar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "completarViaje",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/viajes/676201ce157ee198a4db771d/completar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"viajes",
+										"676201ce157ee198a4db771d",
+										"completar"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "236"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ec-NARfdXyqsAj5uyNPBgf5tWVv+zU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:58:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ubicacionInicio\": {\n        \"lat\": 3.60971,\n        \"lng\": -65.08175\n    },\n    \"_id\": \"676201ce157ee198a4db771d\",\n    \"conductorId\": \"676200b8fd04e1d8ae067f63\",\n    \"pasajeroId\": \"676200b8fd04e1d8ae067f71\",\n    \"estado\": \"completado\",\n    \"fechaInicio\": \"2024-12-17T22:57:18.714Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "obtenerViajesActivos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"conductorId\": \"6761d0e7155da05507bf4fa1\",\r\n    \"pasajeroId\": \"6761d0e7155da05507bf4fa5\",\r\n    \"ubicacionInicio\": {\r\n        \"lat\": 3.60971,\r\n        \"lng\": -65.08175\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/viajes/activos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"viajes",
+								"activos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "obtenerViajesActivos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"conductorId\": \"6761d0e7155da05507bf4fa1\",\r\n    \"pasajeroId\": \"6761d0e7155da05507bf4fa5\",\r\n    \"ubicacionInicio\": {\r\n        \"lat\": 3.60971,\r\n        \"lng\": -65.08175\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/viajes/activos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"viajes",
+										"activos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "234"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ea-Sz5zJ73IZnWuQaC27Wvbwhb1xBQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:57:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"ubicacionInicio\": {\n            \"lat\": 3.60971,\n            \"lng\": -65.08175\n        },\n        \"_id\": \"676201ce157ee198a4db771d\",\n        \"conductorId\": \"676200b8fd04e1d8ae067f63\",\n        \"pasajeroId\": \"676200b8fd04e1d8ae067f71\",\n        \"estado\": \"activo\",\n        \"fechaInicio\": \"2024-12-17T22:57:18.714Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "crearViaje",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"conductorId\": \"676200b8fd04e1d8ae067f63\",\r\n    \"pasajeroId\": \"676200b8fd04e1d8ae067f71\",\r\n    \"ubicacionInicio\": {\r\n        \"lat\": 3.60971,\r\n        \"lng\": -65.08175\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/taxi24/v1/viajes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"taxi24",
+								"v1",
+								"viajes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "crearViaje",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"conductorId\": \"676200b8fd04e1d8ae067f63\",\r\n    \"pasajeroId\": \"676200b8fd04e1d8ae067f71\",\r\n    \"ubicacionInicio\": {\r\n        \"lat\": 3.60971,\r\n        \"lng\": -65.08175\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5001/taxi24/v1/viajes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5001",
+									"path": [
+										"taxi24",
+										"v1",
+										"viajes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "232"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e8-R8mWjag5qbZmCSPO6FtdCMlalO0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 17 Dec 2024 22:57:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"conductorId\": \"676200b8fd04e1d8ae067f63\",\n    \"pasajeroId\": \"676200b8fd04e1d8ae067f71\",\n    \"estado\": \"activo\",\n    \"ubicacionInicio\": {\n        \"lat\": 3.60971,\n        \"lng\": -65.08175\n    },\n    \"_id\": \"676201ce157ee198a4db771d\",\n    \"fechaInicio\": \"2024-12-17T22:57:18.714Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
