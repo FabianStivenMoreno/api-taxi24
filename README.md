@@ -53,3 +53,7 @@ Para la ejecución en ambiente de desarrollo luego de los pasos previos debemos 
 npm run build
 npm run start
 ```
+
+# Especificicaciones por endpoint
+
+Para probar los endpoint revisar la colección en la carpeta docs del proyecto y validar la siguiente [Documentación](https://documenter.getpostman.com/view/17088869/2sAYJ1jhAT)
