@@ -24,7 +24,7 @@ git checkout origin/LAB
 **2.2** _Una vez clonado se deben instalar las dependencias necesarias ejecutando el siguiente comando:_
 
 ```
-npm intall
+npm install
 ```
 ## 3. Creación de archivo variables de entorno (.env)
 Se debe crear un archivo con el nombre _**.env**_ con las siguientes variables de entorno revisar archivo (.env_sample):
@@ -36,7 +36,7 @@ Se debe crear un archivo con el nombre _**.env**_ con las siguientes variables d
 Para la ejecución de las pruebas se necesita tener data de conductores y pasajeros por lo cual se debe ejecutar el script _**crearDataPrueba.ts**_ ejecutando el siguiente comando:
 
 ```
-npx ts-node src/scripts/crearConductores.ts
+npx ts-node src/scripts/crearDataPrueba.ts
 ```
 
 ## 5. Ejecución del proyecto:
@@ -53,3 +53,7 @@ Para la ejecución en ambiente de desarrollo luego de los pasos previos debemos 
 npm run build
 npm run start
 ```
+
+# Especificicaciones por endpoint
+
+Para probar los endpoint revisar la colección en la carpeta docs del proyecto y validar la siguiente [Documentación](https://documenter.getpostman.com/view/17088869/2sAYJ1jhAT)
